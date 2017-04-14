@@ -13,7 +13,7 @@ Client <- Git Checkout HEAD -- newClient.exe
 
 Other Actions
 Server -> Git Commit #5a4b3c2d1e Comment: ping 172.16.1.1 -t -l 5000
-Client <- Git Checkout + Perform Action requested. Perhaps a return push with no file changes and a new comment with status?
+Client <- Git Checkout + Perform Action requested. Return status through comment to commit. Commit will contain random file that will then be deleted on next command.
 
 Halt Actions
 Server -> Git Commit #1111111111 Comment: halt
